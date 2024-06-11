@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 interface EditModalProps {
     eventId: string | null;
     onClose: () => void;
@@ -46,9 +48,7 @@ const EditModal: React.FC<EditModalProps> = ({ eventId, onClose, eventData, fetc
             if (response.status === 200) {
                 toast.success("Event updated successfully")
                 onClose();
-                fetchEvents(); // Close the modal after successful submission
-
-                // You can perform additional actions here after successful submission
+                fetchEvents();
                 console.log('Event updated successfully.');
             } else {
                 toast.error("Failed updating event")

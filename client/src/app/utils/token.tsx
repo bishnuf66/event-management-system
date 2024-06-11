@@ -1,4 +1,4 @@
-/* 
+/*
 export const getToken = () => {
     if (typeof document !== 'undefined') {
         const cookies = document.cookie.split(';').map(cookie => cookie.trim());
@@ -10,3 +10,5 @@ export const getToken = () => {
     return null;
 };
 export default getToken() */
+
+//the retrived token from cookie is comming out malformed so crrently using localstorage instead

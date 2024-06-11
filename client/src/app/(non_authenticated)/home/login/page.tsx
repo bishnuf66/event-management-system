@@ -8,7 +8,6 @@ export default function page() {
         <div className='flex flex-col min-h-screen'>
             <Header />
             <div className='flex flex-grow'> <Login /></div>
-
             <Footer />
         </div>
     )

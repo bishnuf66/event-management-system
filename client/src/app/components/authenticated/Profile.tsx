@@ -26,7 +26,6 @@ const Profile = () => {
                 console.log(response.data.user);
             } catch (error) {
                 console.error('Error fetching user data:', error);
-                // Handle error: Set user state to null or show an error message
             }
         };
         fetchUser();

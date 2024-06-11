@@ -1,6 +1,5 @@
 
 import EventList from '@/app/components/authenticated/EventList'
-import ManageEvents from '@/app/components/authenticated/CreateEvent'
 import Footer from '@/app/components/Footer'
 import Header from '@/app/components/Header'
 

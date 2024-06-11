@@ -1,6 +1,4 @@
-// components/EventList.tsx
 "use client"
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -78,9 +76,7 @@ function EventList() {
                     onChange={(e) => setFilterOption(e.target.value)}
                     className="border text-white border-gray-400 rounded px-3 py-1 ml-2 bg-gray-700 hover:bg-gray-900"
                 >
-                    <option value="">
-                        <i className="material-icons mr-2">filter_alt</i> Filter By
-                    </option>
+                    <option value=""> Filter By  </option>
                     <option value="name">Name</option>
                     <option value="startDate">Start Date</option>
                     <option value="endDate">End Date</option>
@@ -91,8 +87,7 @@ function EventList() {
                     onChange={(e) => setSortBy(e.target.value)}
                     className="text-white border border-gray-400 rounded px-3 py-1 ml-2 bg-gray-700 hover:bg-gray-900"
                 >
-                    <option value="">
-                        <i className="material-icons mr-2">sort</i> Sort By
+                    <option value=""> Sort By
                     </option>
                     <option value="name">Name</option>
                     <option value="startDate">Start Date</option>

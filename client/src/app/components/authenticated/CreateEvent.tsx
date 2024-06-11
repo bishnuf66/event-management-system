@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 interface FormData {
     title: string;
     participants: number;
-    startdate: string; // Assuming startdate and enddate are of type string
+    startdate: string;
     enddate: string;
     description: string;
     location: string;
@@ -33,11 +33,6 @@ const CreateEvent = () => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement | HTMLTextAreaElement>) => {
         e.preventDefault();
-        // Validation checks
-        if (!formData.title) {
-            alert('Event title is required');
-            return;
-        }
 
         try {
             const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/createevent`, formData, {
@@ -55,7 +50,7 @@ const CreateEvent = () => {
             console.error('Registration failed:', error.message);
         }
 
-        console.log(formData); // For demonstration, logging form data
+        console.log(formData);
     };
 
     return (

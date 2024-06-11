@@ -1,1 +1,52 @@
-[{"eventid":"52976d68-3422-4e6f-a683-53c0436b0044","title":"event to meetup","participants":"5","startdate":"2024-06-10","enddate":"2024-06-12","description":"this is the events to meet up"},{"eventid":"f9eb123b-bd35-488b-8a03-24dc15f21cdf","title":"adsad","participants":"34","startdate":"2024-06-28","enddate":"2024-06-21","description":"adaw"},{"eventid":"1f432a20-e831-4a71-ac7f-4dd9d7f6eb03","title":"email event","participants":"4","startdate":"2024-06-13","enddate":"2024-06-12","description":"this should provide email"},{"createdby":"test@gmail.com","eventid":"119b8679-ef3b-4bca-97a0-84a1f677dc6e","title":"this is a edited title 2","location":"asdsd","participants":"3","startdate":"2024-06-18","enddate":"2024-06-20","description":"asd"},{"createdby":"test@gmail.com","eventid":"f07e87c6-c15d-4475-8016-f0276a3008f3","title":"sdsd","location":"kadaghari","participants":"19","startdate":"2024-06-19","enddate":"2024-06-14","description":"ths"}]
+[
+  {
+    "createdby": "bkbishnu2000@gmail.com",
+    "eventid": "f29ac833-4d00-40ca-bd93-e8ff7bbe072c",
+    "title": "this is event title",
+    "location": "kathmandu",
+    "participants": "9",
+    "startdate": "2024-06-11",
+    "enddate": "2024-06-19",
+    "description": "this is a event description"
+  },
+  {
+    "createdby": "bkbishnu2000@gmail.com",
+    "eventid": "a525a8c1-eeeb-4dbc-a4fc-b103740cd6ec",
+    "title": "wedding",
+    "location": "bhaktapur",
+    "participants": "12",
+    "startdate": "2024-06-13",
+    "enddate": "2024-06-19",
+    "description": "this is the description of the wedding."
+  },
+  {
+    "createdby": "test@gmail.com",
+    "eventid": "33563dfd-fabe-44c3-9fe4-3ef8412e54e4",
+    "title": "Birthday",
+    "location": "Tinkune, burgerhouse",
+    "participants": "12",
+    "startdate": "2024-06-12",
+    "enddate": "2024-06-12",
+    "description": "this is a birthday event of paribesh"
+  },
+  {
+    "createdby": "test@gmail.com",
+    "eventid": "6a30859f-4774-4cee-bdfd-764cfa677000",
+    "title": "Hackathon",
+    "location": "phoenix college",
+    "participants": "23",
+    "startdate": "2024-06-19",
+    "enddate": "2024-06-26",
+    "description": "This is hackathon event"
+  },
+  {
+    "createdby": "test@gmail.com",
+    "eventid": "e0592f30-7682-48ba-9368-f668f6f83c15",
+    "title": "Engagement",
+    "location": "Mahadevstan Banquet",
+    "participants": "24",
+    "startdate": "2024-06-23",
+    "enddate": "2024-06-30",
+    "description": "this is the engagement event"
+  }
+]

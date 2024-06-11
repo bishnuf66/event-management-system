@@ -86,11 +86,10 @@ module.exports.createEvent = (data, emaildata) => {
 module.exports.getAllEvents = (data, res) => {
     const myPromise = new Promise((resolve, reject) => {
         try {
-            // Read events from JSON file
+         
             const eventsData = fs.readFileSync(jsonFilePath, 'utf-8');
             const events = JSON.parse(eventsData);
-            // Return events as response
-
+          
             resolve({ events, measage: "fetched data", success: true });
         } catch (error) {
             console.error('Error reading events:', error);
@@ -108,12 +107,13 @@ module.exports.getUserEvent = (emaildata, res) => {
         const email = emaildata;
         console.log(email)
         try {
-            // Read events from JSON file
+          
             const eventsData = fs.readFileSync(jsonFilePath, 'utf-8');
             const events = JSON.parse(eventsData);
-            // Filter events based on email
+
             const userEvents = events.filter(event => event.createdby === email);
-            // Return filtered events as response
+
+
             resolve({ userEvents, message: "User events fetched successfully", success: true });
         } catch (error) {
             console.error('Error reading events:', error);
@@ -131,25 +131,23 @@ module.exports.deleteEvent = (eventid, emaildata, res) => {
         console.log(email)
         console.log(id)
         try {
-            // Read events from JSON file
+           
             const eventsData = fs.readFileSync(jsonFilePath, 'utf-8');
             let events = JSON.parse(eventsData);
 
-            // Filter events based on email
+            // Find event by email of user
             const userEvents = events.filter(event => event.createdby === email);
 
-            // Find index of event to be deleted
+        
             const indexToDelete = events.findIndex(event => event.eventid === id && event.createdby === email);
 
-            // If event to delete is found, remove it from events list
+         
             if (indexToDelete !== -1) {
                 events.splice(indexToDelete, 1);
             }
 
-            // Update eventsData after deletion
             const updatedEventsData = JSON.stringify(events);
             fs.writeFileSync(jsonFilePath, updatedEventsData);
-            // Return filtered events as response
             resolve({ userEvents, message: "User events fetched successfully", success: true });
         } catch (error) {
             console.error('Error reading events:', error);
@@ -184,7 +182,7 @@ module.exports.editEvent = (eventId, emaildata, data) => {
                             console.log("File content:", jsonString);
                             try {
                                 let events = JSON.parse(jsonString);
-                                // Find the index of the event with the given eventId
+                                
                                 const index = events.findIndex(event => event.eventid === eventId);
                                 if (index !== -1) {
                                     // Update the event data

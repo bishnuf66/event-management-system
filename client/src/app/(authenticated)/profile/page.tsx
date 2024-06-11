@@ -3,7 +3,6 @@ import Header from '@/app/components/Header'
 import React from 'react'
 import Profile from '@/app/components/authenticated/Profile'
 
-
 export default async function Page() {
     return (
         <div className='flex flex-col min-h-screen'>

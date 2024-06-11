@@ -1,4 +1,4 @@
-// components/Register.tsx
+
 
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
@@ -47,15 +47,12 @@ const Register = () => {
                     }
                 );
 
-
                 if (response.status == 200) {
                     toast.success(
                         "Registration completed.You can login now"
                     );
                     router.push('/home/login')
                 }
-
-                // Handle successful registration
                 console.log('Registration successful');
             } catch (error: any) {
                 toast.error(
@@ -66,15 +63,13 @@ const Register = () => {
             }
         }
 
-        // Add your registration logic here
-        console.log(formData); // For demonstration, logging form data
+        console.log(formData);
     };
 
     return (
 
         <div className="container mx-auto p-4 bg-gradient-to-r from-gray-500 to-gray-300 min-w-full ">
             <ToastContainer />
-
             <form onSubmit={handleSubmit} className="max-w-md mx-auto text-black w-full">
                 <div className="text-gray-900 text-2xl font-bold mb-4">Register</div>
                 <div className="mb-6">

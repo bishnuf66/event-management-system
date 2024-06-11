@@ -1,6 +1,4 @@
-// components/EventList.tsx
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
@@ -98,6 +96,16 @@ const EventList = () => {
         setEvents(sortedEvents);
     };
 
+    useEffect(() => {
+        if (sortType === 'startDate') {
+            sortByStartDate();
+        } else if (sortType === 'endDate') {
+            sortByEndDate();
+        } else if (sortType === 'name') {
+            sortByName();
+        }
+    }, [sortType]);
+
     const filteredEvents = events.filter(event =>
         event.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -139,9 +147,6 @@ const EventList = () => {
                 {filteredEvents.map(event => (
                     <ul key={event.eventid} className='flex flex-col px-3 py-3 rounded-lg shadow-lg'>
                         <li className="flex items-center mb-2">
-                            <span className="material-icons mr-2">badge</span>Event ID: {event.eventid}
-                        </li>
-                        <li className="flex items-center mb-2">
                             <span className="material-icons mr-2">title</span>Event Title: {event.title}
                         </li>
                         <li className="flex items-center mb-2">
@@ -154,9 +159,7 @@ const EventList = () => {
                             <span className="material-icons mr-2">calendar_today</span>Event Start Date: {event.startdate}
                         </li>
                         <li className="flex items-center mb-2">
-                            <span
-                                // components/EventList.tsx
-                                className="material-icons mr-2">calendar_today</span>Event End Date: {event.enddate}
+                            <span className="material-icons mr-2">calendar_today</span>Event End Date: {event.enddate}
                         </li>
                         <li className="flex items-center mb-2">
                             <span className="material-icons mr-2">description</span>Event Description: {event.description}

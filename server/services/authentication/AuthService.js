@@ -21,7 +21,7 @@ module.exports.Register = (registerData, res) => {
                     return res
                         .status(400)
                         .json({ message: "Validation error", success: false });
-                } 
+                }
                 else {
                     console.log("haha")
                     const userData = {
@@ -63,11 +63,8 @@ module.exports.Register = (registerData, res) => {
                                 return;
                             }
                             console.log("haha")
-
-                            // Push new user data
                             users.push(userData);
 
-                            // Write updated data back to file
                             fs.writeFile(jsonFilePath, JSON.stringify(users, null, 2), (err) => {
                                 if (err) {
                                     reject({ message: "Error writing to JSON file", success: false });
@@ -99,7 +96,7 @@ module.exports.Login = (loginData, res) => {
                         .status(400)
                         .json({ message: "Validation error", success: false });
                 } else {
-                    console.log("hah")
+                    // console.log("hah")
                     fs.readFile(jsonFilePath, 'utf8', async (err, data) => {
                         if (err) {
                             return reject({ message: "Error reading JSON file", success: false });

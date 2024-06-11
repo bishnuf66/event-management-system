@@ -1,37 +1,16 @@
 [
   {
-    "uniqueId": "62c6b1e5-b479-4d74-9596-5c8848834835",
+    "uniqueId": "bd478398-56c4-45cb-a13b-6a7eccf84584",
     "email": "bkbishnu2000@gmail.com",
     "name": "Bishnu bk",
-    "address": "asdassdsdsdsdsdd",
-    "password": "$2b$10$VWyqNJ1C7mCjq9BOzNdUqe6sYvtNb/5c0.K3fNchmKTuXG7VYBQAm"
+    "address": "kadaghri",
+    "password": "$2b$10$lG1t8dZC.P.8O1oWW6gpv.mmsA9oz53b4ywl8kT8/lIlvaV7pdCP2"
   },
   {
-    "uniqueId": "b64b60fa-28e0-4c7a-a966-9485bbfbc5d6",
-    "email": "bkbishnu2000@gmail.com",
-    "name": "Bishnu bk",
-    "address": "asdassdsdsdsdsdd",
-    "password": "$2b$10$eRW/RIkyEVtc1q2d7EXVGOcb7G7t6PH4r68PceGwdjtJkRxk92vYG"
-  },
-  {
-    "uniqueId": "89fe87b5-992f-4477-83c6-e7b13ebf9f66",
-    "email": "asdasd@gmai.com",
-    "name": "hshs",
-    "address": "asdassdsdasd",
-    "password": "$2b$10$Q45eCRKDa46IpFCun/9Qo.VSuRLpphk0eAyK0wOxAMK1J7SPZ.69."
-  },
-  {
-    "uniqueId": "deaeefeb-4f9f-4536-aeab-21a61ce31456",
+    "uniqueId": "8990ed03-5565-4506-b1e4-59d229185474",
     "email": "test@gmail.com",
-    "name": "bishnu",
-    "address": "kathmadnu",
-    "password": "$2b$10$WMM4PY8t1lUZKQtZ.l/PJOlb/57EBnf38m/cHVfyYcqmRFc4uoG5i"
-  },
-  {
-    "uniqueId": "5d6c2931-708f-4857-b6a8-3e5889c7b127",
-    "email": "thisis@email.com",
-    "name": "this is name",
-    "address": "this is address",
-    "password": "$2b$10$bBhaYLsX4i2HfbSLjfuj4OKwp37mCVXceHrSzrBpjfpLYXrmG4YJe"
+    "name": "test",
+    "address": "kathmadnu,baneshwor",
+    "password": "$2b$10$YdIel4kYPIocx0U1fdSaAu/0wQtcMBy323CAAVJyWaKlhnkt/0y6e"
   }
 ]

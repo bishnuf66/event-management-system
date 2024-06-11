@@ -1,10 +1,12 @@
-// components/Login.tsx
 "use client"
 import axios from 'axios';
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+
 
 interface FormData {
     email: string;
@@ -43,6 +45,7 @@ const Login = () => {
 
 
         } catch (error) {
+            toast.error("Login Failed! Invalid email or password")
             console.log('Error occured', error);
         }
     };
@@ -69,6 +72,7 @@ const Login = () => {
             </form>
 
         </div>
+
     );
 };
 
